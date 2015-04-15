@@ -13,4 +13,4 @@ target/
 *.ear
 *.war
 *.class
-/target
+/.idea
