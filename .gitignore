@@ -13,6 +13,4 @@ target/
 *.ear
 *.war
 *.class
-/.idea
 .idea/
-.idea/workspace.xml

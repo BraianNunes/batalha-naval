@@ -1,12 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3986accf-10a0-44e5-963d-2539ad448bbb" name="Default" comment="Teste commit!" />
-    <list id="e3475505-7ee6-4438-9a64-73078239e488" name="Failed commit: Default" comment="Teste commit!">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/br/iesb/batalhanaval/view/BoardTable.java" afterPath="$PROJECT_DIR$/src/main/java/br/iesb/batalhanaval/view/BoardTable.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/br/iesb/batalhanaval/view/DefaultTableModelImpl.java" afterPath="$PROJECT_DIR$/src/main/java/br/iesb/batalhanaval/view/DefaultTableModelImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/br/iesb/batalhanaval/view/JScrollPaneImpl.java" afterPath="$PROJECT_DIR$/src/main/java/br/iesb/batalhanaval/view/JScrollPaneImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/br/iesb/batalhanaval/model/Location.java" afterPath="$PROJECT_DIR$/src/main/java/br/iesb/batalhanaval/model/Location.java" />
+    <list default="true" id="3986accf-10a0-44e5-963d-2539ad448bbb" name="Default" comment="Teste commit!">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/br/iesb/batalhanaval/view/TableCellRendererImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/br/iesb/batalhanaval/view/SeaBattleBoard.java" afterPath="$PROJECT_DIR$/src/main/java/br/iesb/batalhanaval/view/SeaBattleBoard.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -16,8 +13,6 @@
       <directory path="$PROJECT_DIR$/target/" />
     </manually-removed-from-ignored>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
-    <file path="$PROJECT_DIR$/src/main/java/br/iesb/batalhanaval/view/SeaBattleBoard.java" ignored="true" />
-    <file path="$PROJECT_DIR$/.idea/workspace.xml" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="true" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,8 +48,8 @@
       <file leaf-file-name="RowHeaderAll.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/br/iesb/batalhanaval/view/RowHeaderAll.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.4006734">
-              <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.30555555">
+              <caret line="11" column="30" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
               <folding />
             </state>
           </provider>
@@ -895,7 +890,7 @@
       <workItem from="1429131288501" duration="1607000" />
       <workItem from="1429132909772" duration="171000" />
       <workItem from="1429133144338" duration="1611000" />
-      <workItem from="1429135391786" duration="9224000" />
+      <workItem from="1429135391786" duration="9389000" />
     </task>
     <task id="LOCAL-00001" summary="Primeiro commit do projeto.">
       <created>1429126690788</created>
@@ -939,11 +934,17 @@
       <option name="project" value="LOCAL" />
       <updated>1429211653446</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Teste commit!">
+      <created>1429211997632</created>
+      <option name="number" value="00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1429211997632</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="86469000" />
+    <option name="totallyTimeSpent" value="86634000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -959,13 +960,13 @@
     <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" x="1787" y="104" width="124" height="584" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32972974" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32864866" sideWeight="0.49574015" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32912722" sideWeight="0.4978701" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31966352" sideWeight="0.4765708" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32972974" sideWeight="0.5404686" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32912722" sideWeight="0.5425985" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3336887" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32972974" sideWeight="0.45953143" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32912722" sideWeight="0.45740148" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.17513514" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="BrainLeg" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32972974" sideWeight="0.4968051" order="13" side_tool="false" content_ui="tabs" />
@@ -1492,8 +1493,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/br/iesb/batalhanaval/view/RowHeaderAll.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4006734">
-          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.30555555">
+          <caret line="11" column="30" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
           <folding />
         </state>
       </provider>
