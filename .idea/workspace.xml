@@ -7,6 +7,7 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/br/iesb/batalhanaval/view/JScrollPaneImpl.java" afterPath="$PROJECT_DIR$/src/main/java/br/iesb/batalhanaval/view/JScrollPaneImpl.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/br/iesb/batalhanaval/model/Location.java" afterPath="$PROJECT_DIR$/src/main/java/br/iesb/batalhanaval/model/Location.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/br/iesb/batalhanaval/view/SeaBattleBoard.java" afterPath="$PROJECT_DIR$/src/main/java/br/iesb/batalhanaval/view/SeaBattleBoard.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path=".idea/dataSources.local.xml" />
     <manually-removed-from-ignored>
@@ -904,7 +905,7 @@
       <workItem from="1429131288501" duration="1607000" />
       <workItem from="1429132909772" duration="171000" />
       <workItem from="1429133144338" duration="1611000" />
-      <workItem from="1429135391786" duration="8739000" />
+      <workItem from="1429135391786" duration="8842000" />
     </task>
     <task id="LOCAL-00001" summary="Primeiro commit do projeto.">
       <created>1429126690788</created>
@@ -946,7 +947,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="85984000" />
+    <option name="totallyTimeSpent" value="86087000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
