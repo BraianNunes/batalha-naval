@@ -905,7 +905,7 @@
       <workItem from="1429131288501" duration="1607000" />
       <workItem from="1429132909772" duration="171000" />
       <workItem from="1429133144338" duration="1611000" />
-      <workItem from="1429135391786" duration="8514000" />
+      <workItem from="1429135391786" duration="8684000" />
     </task>
     <task id="LOCAL-00001" summary="Primeiro commit do projeto.">
       <created>1429126690788</created>
@@ -947,7 +947,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="85759000" />
+    <option name="totallyTimeSpent" value="85929000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1039,12 +1039,14 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="CHECK_NEW_TODO" value="false" />
     <option name="SHOW_DIRTY_RECURSIVELY" value="true" />
     <MESSAGE value="Primeiro commit do projeto." />
     <MESSAGE value="Inclusão do gitignore." />
     <MESSAGE value="Atualização do .gitignore" />
     <MESSAGE value="Configuração do tableCellRendererImpl" />
-    <option name="LAST_COMMIT_MESSAGE" value="Configuração do tableCellRendererImpl" />
+    <MESSAGE value="Configuração do tableCellRendererImpl 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="Configuração do tableCellRendererImpl 2" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
