@@ -14,3 +14,4 @@ target/
 *.war
 *.class
 /.idea
+.idea/
