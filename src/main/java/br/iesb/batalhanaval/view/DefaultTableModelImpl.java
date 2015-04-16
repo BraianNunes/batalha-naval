@@ -22,18 +22,31 @@ public class DefaultTableModelImpl extends AbstractTableModel {
 
     private void createLocations() {
         listLocation = new ArrayList<Location>();
-        for (int i = 0; i < ROW_HEADER.length * COLUMN_HEADER.length; i++) {
-            // FIXME remover condição
-            if (i % 2 == 0) {
-                listLocation.add(new Location(Icon.HIT));
-            } else {
-                listLocation.add(new Location(Icon.WATER));
+        for (int row = 0; row < ROW_HEADER.length; row++) {
+            for (int column = 0; column < COLUMN_HEADER.length; column++) {
+                Location location = new Location();
+
+                // FIXME remover condição
+                if (row % 2 == 0) {
+                    location.setIcon(Icon.HIT);
+                } else {
+                    location.setIcon(Icon.WATER);
+                }
+
+                location.setAxisRow(row);
+                location.setAxisColumn(column);
+                listLocation.add(location);
             }
         }
     }
 
     public Object getValueAt(int rowIndex, int columnIndex) {
-        return null;
+        for (Location item : listLocation) {
+            if (item.getAxisRow() == rowIndex && item.getAxisColumn() == columnIndex) {
+                return item;
+            }
+        }
+        return new Location(Icon.WATER);
     }
 
     public int getColumnCount() {
@@ -47,5 +60,15 @@ public class DefaultTableModelImpl extends AbstractTableModel {
     @Override
     public boolean isCellEditable(int rowIndex, int columnIndex) {
         return false;
+    }
+
+    /**
+     * Seta a localização dos navios
+     * Deve instanciar o objeto correspondente ex.: Navio, Porta aviões, etc...
+     * Capturar o seu objeto localização (obtendo as coordenadas) (verificar conflitos entre as posições (chamar método no pai mesmo)
+     * ele vai identificar a localização e definir os pontos estratégicos para cada localização das embarcações.
+     */
+    private int[][] setLocation() {
+        return null;
     }
 }

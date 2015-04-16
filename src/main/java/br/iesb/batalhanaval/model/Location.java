@@ -4,8 +4,8 @@ package br.iesb.batalhanaval.model;
  * Created by abraao.queiroz on 10/04/2015.
  */
 public class Location {
-    private int axisX;
-    private int axisY;
+    private int axisRow;
+    private int axisColumn;
     private Icon icon = Icon.EMPTY;
 
     public Location() {
@@ -23,19 +23,24 @@ public class Location {
         this.icon = icon;
     }
 
-    public int getAxisX() {
-        return axisX;
+    public int getAxisRow() {
+        return axisRow;
     }
 
-    public void setAxisX(int axisX) {
-        this.axisX = axisX;
+    public void setAxisRow(final int finalAxisRow) {
+        axisRow = finalAxisRow;
     }
 
-    public int getAxisY() {
-        return axisY;
+    public int getAxisColumn() {
+        return axisColumn;
+    }
+    
+    public void setAxisColumn(final int finalAxisColumn) {
+        axisColumn = finalAxisColumn;
     }
 
-    public void setAxisY(int axisY) {
-        this.axisY = axisY;
+    @Override
+    public String toString() {
+        return "L";
     }
 }

@@ -1,5 +1,7 @@
 package br.iesb.batalhanaval.view;
 
+import br.iesb.batalhanaval.model.Location;
+
 import javax.swing.*;
 import javax.swing.table.JTableHeader;
 import java.awt.*;
@@ -12,21 +14,25 @@ import java.awt.event.MouseEvent;
 public class BoardTable extends JTable {
     private String headers[] = {"1", "2", "3", "4", "5", "6", "7", "8", "9"};
     private JScrollPane scroll = new JScrollPane(this);
+    private DefaultTableModelImpl myTableModel;
 
     public BoardTable(DefaultTableModelImpl defaultTableModel) {
         super(defaultTableModel);
+        this.myTableModel = defaultTableModel;
         initializeVariables();
     }
-
+    
     protected void initializeVariables() {
         this.setRowHeight(30);
         this.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
         this.setCellSelectionEnabled(true);
-
+        
         this.addMouseListener(new MouseAdapter() {
             @Override
             public void mouseClicked(MouseEvent e) {
                 System.out.println("Row: " + getSelectedRow() + " Column: " + getSelectedColumn());
+                Location location = (Location) myTableModel.getValueAt(getSelectedRow(), getSelectedColumn());
+                System.out.println(location.getIcon().toString());
             }
         });
 

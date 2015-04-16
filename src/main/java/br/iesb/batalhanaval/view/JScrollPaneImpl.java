@@ -19,12 +19,11 @@ public class JScrollPaneImpl extends JScrollPane {
         // Column Header
         JTableHeader tableHeader = jtable.getTableHeader();
         tableHeader.setPreferredSize(new Dimension(100, 30));
-//        tableHeader.set
-
+        
         // Configure scroll
         setColumnHeaderView(tableHeader);
 
-        String[] corner = {"Player 1 "};
+        String[] corner = {"Player 1"};
         setCorner(JScrollPane.UPPER_LEFT_CORNER, new RowHeaderAll(corner, jtable));
     }
 }
