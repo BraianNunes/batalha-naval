@@ -1,7 +1,6 @@
 package br.iesb.batalhanaval.view;
 
 import javax.swing.*;
-import javax.swing.table.TableCellRenderer;
 
 /**
  * Created by abraao.queiroz on 08/04/2015.
@@ -20,17 +19,17 @@ public class SeaBattleBoard extends JFrame {
 
         sb.setTitle("SeaBattleBoard");
         sb.setContentPane(new SeaBattleBoard().jp_Main);
-        sb.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
+        sb.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         sb.setResizable(false);
         sb.pack();
         sb.setVisible(true);
     }
-
+    
     private void createUIComponents() {
         tb_Player1 = new BoardTable(new DefaultTableModelImpl());
         this.jsp_Player1 = new JScrollPaneImpl(tb_Player1);
 
-        TableCellRenderer renderer = new TableCellRendererImpl();
-        tb_Player1.setDefaultRenderer(Object.class, renderer);
+//        TableCellRenderer renderer = new TableCellRendererImpl();
+//        tb_Player1.setDefaultRenderer(Object.class, renderer);
     }
 }

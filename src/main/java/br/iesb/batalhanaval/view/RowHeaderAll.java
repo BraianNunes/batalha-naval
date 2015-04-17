@@ -12,6 +12,5 @@ public class RowHeaderAll extends JList {
         setFixedCellWidth(50);
         setFixedCellHeight(table.getRowHeight());
         setCellRenderer(new RowHeaderRenderer(table));
-
     }
 }

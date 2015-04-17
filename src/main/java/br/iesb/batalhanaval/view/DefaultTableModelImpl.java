@@ -62,6 +62,11 @@ public class DefaultTableModelImpl extends AbstractTableModel {
         return false;
     }
 
+    @Override
+    public void setValueAt(final Object aValue, final int rowIndex, final int columnIndex) {
+        super.setValueAt(aValue, rowIndex, columnIndex);
+    }
+
     /**
      * Seta a localização dos navios
      * Deve instanciar o objeto correspondente ex.: Navio, Porta aviões, etc...

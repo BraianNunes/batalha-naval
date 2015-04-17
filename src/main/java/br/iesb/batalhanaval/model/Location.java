@@ -6,7 +6,7 @@ package br.iesb.batalhanaval.model;
 public class Location {
     private int axisRow;
     private int axisColumn;
-    private Icon icon = Icon.EMPTY;
+    private Icon icon;
 
     public Location() {
     }
@@ -38,7 +38,7 @@ public class Location {
     public void setAxisColumn(final int finalAxisColumn) {
         axisColumn = finalAxisColumn;
     }
-
+    
     @Override
     public String toString() {
         return "L";
