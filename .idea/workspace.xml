@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3986accf-10a0-44e5-963d-2539ad448bbb" name="Default" comment="Default commit!">
+    <list default="true" id="3986accf-10a0-44e5-963d-2539ad448bbb" name="Default" comment="Atualização da cor da célula.">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/br/iesb/batalhanaval/view/example1/Cell.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/br/iesb/batalhanaval/view/example1/CellSelectionSet.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/br/iesb/batalhanaval/view/example1/ColorSelectedTableCells.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/br/iesb/batalhanaval/view/example1/MyCellRenderer.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/br/iesb/batalhanaval/view/BoardTable.java" afterPath="$PROJECT_DIR$/src/main/java/br/iesb/batalhanaval/view/BoardTable.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/br/iesb/batalhanaval/view/TableCellRendererImpl.java" afterPath="$PROJECT_DIR$/src/main/java/br/iesb/batalhanaval/view/TableCellRendererImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path=".idea/dataSources.local.xml" />
@@ -32,16 +35,18 @@
     <favorites_list name="BatalhaNaval" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.446863">
+    <splitter split-orientation="horizontal" split-proportion="0.5">
       <split-first>
         <leaf>
           <file leaf-file-name="TableCellRendererImpl.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/main/java/br/iesb/batalhanaval/view/TableCellRendererImpl.java">
               <provider selected="true" editor-type-id="text-editor">
                 <state vertical-scroll-proportion="0.0">
-                  <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+                  <caret line="31" column="79" selection-start-line="31" selection-start-column="79" selection-end-line="31" selection-end-column="79" />
                   <folding>
                     <element signature="imports" expanded="true" />
+                    <element signature="e#575#576#0" expanded="true" />
+                    <element signature="e#621#622#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -51,7 +56,7 @@
             <entry file="file://$PROJECT_DIR$/src/main/java/br/iesb/batalhanaval/view/DefaultTableModelImpl.java">
               <provider selected="true" editor-type-id="text-editor">
                 <state vertical-scroll-proportion="0.0">
-                  <caret line="58" column="0" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
+                  <caret line="45" column="26" selection-start-line="45" selection-start-column="26" selection-end-line="45" selection-end-column="26" />
                   <folding>
                     <element signature="e#1840#1841#0" expanded="true" />
                     <element signature="e#1868#1869#0" expanded="true" />
@@ -77,17 +82,31 @@
             <entry file="file://$PROJECT_DIR$/src/main/java/br/iesb/batalhanaval/view/SeaBattleBoard.java">
               <provider selected="true" editor-type-id="text-editor">
                 <state vertical-scroll-proportion="0.0">
-                  <caret line="28" column="48" selection-start-line="28" selection-start-column="48" selection-end-line="28" selection-end-column="48" />
+                  <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="BoardTable.java" pinned="false" current-in-tab="true">
+          <file leaf-file-name="BoardTable.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/main/java/br/iesb/batalhanaval/view/BoardTable.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.3188623">
-                  <caret line="27" column="30" selection-start-line="27" selection-start-column="30" selection-end-line="27" selection-end-column="30" />
+                <state vertical-scroll-proportion="0.0">
+                  <caret line="76" column="0" selection-start-line="76" selection-start-column="0" selection-end-line="76" selection-end-column="0" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                    <element signature="e#2034#2035#0" expanded="true" />
+                    <element signature="e#2062#2063#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="ColorSelectedTableCells.java" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/main/java/br/iesb/batalhanaval/view/example1/ColorSelectedTableCells.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.1464873">
+                  <caret line="46" column="6" selection-start-line="46" selection-start-column="6" selection-end-line="46" selection-end-column="6" />
                   <folding>
                     <element signature="imports" expanded="true" />
                   </folding>
@@ -95,12 +114,47 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="RowHeaderAll.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/br/iesb/batalhanaval/view/RowHeaderAll.java">
+          <file leaf-file-name="CellSelectionSet.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/java/br/iesb/batalhanaval/view/example1/CellSelectionSet.java">
               <provider selected="true" editor-type-id="text-editor">
                 <state vertical-scroll-proportion="0.0">
-                  <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-                  <folding />
+                  <caret line="38" column="16" selection-start-line="38" selection-start-column="16" selection-end-line="38" selection-end-column="16" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                    <element signature="e#395#396#0" expanded="true" />
+                    <element signature="e#435#436#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="MyCellRenderer.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/java/br/iesb/batalhanaval/view/example1/MyCellRenderer.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.0">
+                  <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                    <element signature="e#489#490#0" expanded="true" />
+                    <element signature="e#545#546#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="Cell.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/java/br/iesb/batalhanaval/view/example1/Cell.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.0">
+                  <caret line="19" column="19" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="19" />
+                  <folding>
+                    <element signature="e#279#280#0" expanded="true" />
+                    <element signature="e#325#326#0" expanded="true" />
+                    <element signature="e#408#409#0" expanded="true" />
+                    <element signature="e#444#445#0" expanded="true" />
+                    <element signature="e#503#504#0" expanded="true" />
+                    <element signature="e#553#554#0" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -109,15 +163,27 @@
       </split-first>
       <split-second>
         <leaf>
-          <file leaf-file-name="TableCellRendererImpl.java" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/main/java/br/iesb/batalhanaval/view/TableCellRendererImpl.java">
+          <file leaf-file-name="MyCellRenderer.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/java/br/iesb/batalhanaval/view/example1/MyCellRenderer.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.5284431">
-                  <caret line="32" column="28" selection-start-line="32" selection-start-column="28" selection-end-line="32" selection-end-column="28" />
+                <state vertical-scroll-proportion="0.0">
+                  <caret line="26" column="44" selection-start-line="26" selection-start-column="44" selection-end-line="26" selection-end-column="44" />
                   <folding>
                     <element signature="imports" expanded="true" />
-                    <element signature="e#575#576#0" expanded="true" />
-                    <element signature="e#621#622#0" expanded="true" />
+                    <element signature="e#489#490#0" expanded="true" />
+                    <element signature="e#545#546#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="ColorSelectedTableCells.java" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/main/java/br/iesb/batalhanaval/view/example1/ColorSelectedTableCells.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="-0.050822124">
+                  <caret line="29" column="13" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -199,8 +265,12 @@
         <option value="$PROJECT_DIR$/src/main/java/br/iesb/batalhanaval/view/DefaultTableModelImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/iesb/batalhanaval/model/Location.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/iesb/batalhanaval/model/Icon.java" />
-        <option value="$PROJECT_DIR$/src/main/java/br/iesb/batalhanaval/view/BoardTable.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/iesb/batalhanaval/view/TableCellRendererImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/iesb/batalhanaval/view/example1/Cell.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/iesb/batalhanaval/view/example1/CellSelectionSet.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/iesb/batalhanaval/view/BoardTable.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/iesb/batalhanaval/view/example1/MyCellRenderer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/iesb/batalhanaval/view/example1/ColorSelectedTableCells.java" />
       </list>
     </option>
   </component>
@@ -363,6 +433,84 @@
     </navigator>
     <panes>
       <pane id="Scratches" />
+      <pane id="Scope">
+        <subPane subId="Project Files">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="PackagesPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="batalha-naval" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="br.iesb.batalhanaval" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="view" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SeaBattleBoard" />
+              <option name="myItemType" value="com.intellij.uiDesigner.projectView.FormNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="batalha-naval" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="br.iesb.batalhanaval" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="view" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="batalha-naval" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="br.iesb.batalhanaval" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="view" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="example1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="batalha-naval" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="br.iesb.batalhanaval" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="model" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -607,66 +755,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="batalha-naval" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="br.iesb.batalhanaval" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="view" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SeaBattleBoard" />
-              <option name="myItemType" value="com.intellij.uiDesigner.projectView.FormNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="batalha-naval" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="br.iesb.batalhanaval" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="view" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="batalha-naval" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="br.iesb.batalhanaval" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="model" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
-      <pane id="Scope">
-        <subPane subId="Project Files">
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -702,27 +790,7 @@
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder3" value="3" />
     <property name="aspect.path.notification.shown" value="true" />
   </component>
-  <component name="RunManager" selected="Application.SeaBattleBoard">
-    <configuration default="false" name="NewForm" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="br.iesb.batalhanaval.view.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="br.iesb.batalhanaval.view.NewForm" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="batalha-naval" />
-      <envs />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Application.ColorSelectedTableCells">
     <configuration default="false" name="SeaBattleBoard" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -791,6 +859,26 @@
         </pattern>
       </extension>
       <option name="MAIN_CLASS_NAME" value="br.iesb.batalhanaval.view.TableIcon" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="batalha-naval" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="ColorSelectedTableCells" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="br.iesb.batalhanaval.view.example1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="br.iesb.batalhanaval.view.example1.ColorSelectedTableCells" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" />
@@ -1051,24 +1139,27 @@
     </configuration>
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Application.MatrizTest" />
-      <item index="1" class="java.lang.String" itemvalue="Application.NewForm" />
-      <item index="2" class="java.lang.String" itemvalue="Application.SeaBattleBoard" />
-      <item index="3" class="java.lang.String" itemvalue="Application.FillViewportHeightDemo" />
-      <item index="4" class="java.lang.String" itemvalue="Application.DragAndDropPanelsDemo" />
-      <item index="5" class="java.lang.String" itemvalue="Application.TableIcon" />
+      <item index="1" class="java.lang.String" itemvalue="Application.SeaBattleBoard" />
+      <item index="2" class="java.lang.String" itemvalue="Application.FillViewportHeightDemo" />
+      <item index="3" class="java.lang.String" itemvalue="Application.DragAndDropPanelsDemo" />
+      <item index="4" class="java.lang.String" itemvalue="Application.TableIcon" />
+      <item index="5" class="java.lang.String" itemvalue="Application.ColorSelectedTableCells" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Application.SeaBattleBoard" />
-        <item index="1" class="java.lang.String" itemvalue="Application.TableIcon" />
-        <item index="2" class="java.lang.String" itemvalue="Application.DragAndDropPanelsDemo" />
-        <item index="3" class="java.lang.String" itemvalue="Application.FillViewportHeightDemo" />
-        <item index="4" class="java.lang.String" itemvalue="Application.NewForm" />
+        <item index="0" class="java.lang.String" itemvalue="Application.ColorSelectedTableCells" />
+        <item index="1" class="java.lang.String" itemvalue="Application.SeaBattleBoard" />
+        <item index="2" class="java.lang.String" itemvalue="Application.TableIcon" />
+        <item index="3" class="java.lang.String" itemvalue="Application.DragAndDropPanelsDemo" />
+        <item index="4" class="java.lang.String" itemvalue="Application.FillViewportHeightDemo" />
       </list>
     </recent_temporary>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
   <component name="SpellCheckerSettings" BundledDictionaries="0" Folders="1" Folder0="$PROJECT_DIR$/../../../JetBrains/Dic/IntelliJ.Portuguese.Brazil.Dictionary-master" Dictionaries="0" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="3986accf-10a0-44e5-963d-2539ad448bbb" name="Default" comment="" />
@@ -1088,7 +1179,8 @@
       <workItem from="1429132909772" duration="171000" />
       <workItem from="1429133144338" duration="1611000" />
       <workItem from="1429135391786" duration="30140000" />
-      <workItem from="1429480637275" duration="3042000" />
+      <workItem from="1429480637275" duration="9876000" />
+      <workItem from="1429529430737" duration="46000" />
     </task>
     <task id="LOCAL-00001" summary="Primeiro commit do projeto.">
       <created>1429126690788</created>
@@ -1144,11 +1236,17 @@
       <option name="project" value="LOCAL" />
       <updated>1429212011834</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Atualização da cor da célula.">
+      <created>1429488073571</created>
+      <option name="number" value="00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1429488073571</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="110427000" />
+    <option name="totallyTimeSpent" value="117307000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1165,13 +1263,11 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" x="1787" y="104" width="124" height="584" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32912722" sideWeight="0.49574015" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31966352" sideWeight="0.4765708" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24675325" sideWeight="0.5490405" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22186147" sideWeight="0.5191898" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3336887" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24675325" sideWeight="0.45095947" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.18290043" sideWeight="0.48081023" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24648649" sideWeight="0.45095947" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32972974" sideWeight="0.4968051" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1673774" sideWeight="0.4935484" order="0" side_tool="false" content_ui="combo" />
@@ -1180,17 +1276,19 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.16719915" sideWeight="0.5064516" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22186147" sideWeight="0.48294243" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="BrainLeg" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.33013844" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24973376" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24946696" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="CodotaView" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32960597" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22186147" sideWeight="0.48081023" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31926408" sideWeight="0.47441363" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.18290043" sideWeight="0.47441363" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Thumbnails" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32972974" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Analysis" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32864866" sideWeight="0.49574015" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32864866" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32792208" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" x="1787" y="104" width="124" height="584" />
@@ -1249,7 +1347,8 @@
     <MESSAGE value="Configuração do tableCellRendererImpl 2" />
     <MESSAGE value="Teste commit!" />
     <MESSAGE value="Default commit!" />
-    <option name="LAST_COMMIT_MESSAGE" value="Default commit!" />
+    <MESSAGE value="Atualização da cor da célula." />
+    <option name="LAST_COMMIT_MESSAGE" value="Atualização da cor da célula." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -1267,15 +1366,122 @@
           <properties />
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="41" />
+      <option name="time" value="44" />
     </breakpoint-manager>
-    <watches-manager />
+    <watches-manager>
+      <configuration name="Application">
+        <watch expression="super.isCellSelected(row, column)" />
+      </configuration>
+    </watches-manager>
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/iesb/batalhanaval/view/TableCellRendererImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="31" column="79" selection-start-line="31" selection-start-column="79" selection-end-line="31" selection-end-column="79" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#575#576#0" expanded="true" />
+            <element signature="e#621#622#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/iesb/batalhanaval/view/DefaultTableModelImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="45" column="26" selection-start-line="45" selection-start-column="26" selection-end-line="45" selection-end-column="26" />
+          <folding>
+            <element signature="e#1840#1841#0" expanded="true" />
+            <element signature="e#1868#1869#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/iesb/batalhanaval/model/Icon.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="10" column="18" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
+          <folding>
+            <element signature="e#203#204#0" expanded="true" />
+            <element signature="e#235#236#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/iesb/batalhanaval/view/SeaBattleBoard.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/iesb/batalhanaval/view/BoardTable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="76" column="0" selection-start-line="76" selection-start-column="0" selection-end-line="76" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2034#2035#0" expanded="true" />
+            <element signature="e#2062#2063#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/iesb/batalhanaval/view/example1/CellSelectionSet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="38" column="16" selection-start-line="38" selection-start-column="16" selection-end-line="38" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#395#396#0" expanded="true" />
+            <element signature="e#435#436#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/iesb/batalhanaval/view/example1/Cell.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="19" column="19" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="19" />
+          <folding>
+            <element signature="e#279#280#0" expanded="true" />
+            <element signature="e#325#326#0" expanded="true" />
+            <element signature="e#408#409#0" expanded="true" />
+            <element signature="e#444#445#0" expanded="true" />
+            <element signature="e#503#504#0" expanded="true" />
+            <element signature="e#553#554#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/iesb/batalhanaval/view/example1/MyCellRenderer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="26" column="44" selection-start-line="26" selection-start-column="44" selection-end-line="26" selection-end-column="44" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#489#490#0" expanded="true" />
+            <element signature="e#545#546#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/iesb/batalhanaval/view/example1/ColorSelectedTableCells.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="46" column="6" selection-start-line="46" selection-start-column="6" selection-end-line="46" selection-end-column="6" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/br/iesb/batalhanaval/view/DefaultTableModelImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1291,7 +1497,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="8" column="14" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1320,6 +1525,8 @@
           <caret line="25" column="39" selection-start-line="25" selection-start-column="39" selection-end-line="25" selection-end-column="39" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#2034#2035#0" expanded="true" />
+            <element signature="e#2062#2063#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1328,7 +1535,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1369,7 +1575,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="7" column="22" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1433,7 +1638,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.28619528">
           <caret line="10" column="14" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1448,7 +1652,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="25" column="39" selection-start-line="25" selection-start-column="39" selection-end-line="25" selection-end-column="39" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1456,25 +1659,23 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.029876977">
           <caret line="21" column="15" selection-start-line="21" selection-start-column="15" selection-end-line="21" selection-end-column="15" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/br/iesb/batalhanaval/view/SeaBattleBoard.form">
-      <provider selected="true" editor-type-id="ui-designer">
-        <state />
-      </provider>
       <provider editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
+      </provider>
+      <provider selected="true" editor-type-id="ui-designer">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/br/iesb/batalhanaval/view/RowHeaderAll.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1482,7 +1683,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.2035928">
           <caret line="8" column="14" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1497,18 +1697,55 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.7.0_79/src.zip!/javax/swing/table/DefaultTableColumnModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33285093">
+          <caret line="281" column="0" selection-start-line="281" selection-start-column="0" selection-end-line="281" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/br/iesb/batalhanaval/view/SeaBattleBoard.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="28" column="48" selection-start-line="28" selection-start-column="48" selection-end-line="28" selection-end-column="48" />
+          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.7.0_79/src.zip!/javax/swing/JTable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33287483">
+          <caret line="2350" column="19" selection-start-line="2350" selection-start-column="19" selection-end-line="2350" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/iesb/batalhanaval/view/example1/Cell.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="19" column="19" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="19" />
+          <folding>
+            <element signature="e#279#280#0" expanded="true" />
+            <element signature="e#325#326#0" expanded="true" />
+            <element signature="e#408#409#0" expanded="true" />
+            <element signature="e#444#445#0" expanded="true" />
+            <element signature="e#503#504#0" expanded="true" />
+            <element signature="e#553#554#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.7.0_79/src.zip!/javax/swing/table/TableModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33287483">
+          <caret line="113" column="18" selection-start-line="113" selection-start-column="18" selection-end-line="113" selection-end-column="18" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/br/iesb/batalhanaval/view/DefaultTableModelImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="58" column="0" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
+          <caret line="45" column="26" selection-start-line="45" selection-start-column="26" selection-end-line="45" selection-end-column="26" />
           <folding>
             <element signature="e#1840#1841#0" expanded="true" />
             <element signature="e#1868#1869#0" expanded="true" />
@@ -1516,32 +1753,60 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.7.0_79/src.zip!/javax/swing/table/DefaultTableColumnModel.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/iesb/batalhanaval/view/TableCellRendererImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33285093">
-          <caret line="281" column="0" selection-start-line="281" selection-start-column="0" selection-end-line="281" selection-end-column="0" />
-          <folding />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="31" column="79" selection-start-line="31" selection-start-column="79" selection-end-line="31" selection-end-column="79" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#575#576#0" expanded="true" />
+            <element signature="e#621#622#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/br/iesb/batalhanaval/view/BoardTable.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3188623">
-          <caret line="27" column="30" selection-start-line="27" selection-start-column="30" selection-end-line="27" selection-end-column="30" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="76" column="0" selection-start-line="76" selection-start-column="0" selection-end-line="76" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#2034#2035#0" expanded="true" />
+            <element signature="e#2062#2063#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/iesb/batalhanaval/view/TableCellRendererImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/iesb/batalhanaval/view/example1/MyCellRenderer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5284431">
-          <caret line="32" column="28" selection-start-line="32" selection-start-column="28" selection-end-line="32" selection-end-column="28" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="26" column="44" selection-start-line="26" selection-start-column="44" selection-end-line="26" selection-end-column="44" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#575#576#0" expanded="true" />
-            <element signature="e#621#622#0" expanded="true" />
+            <element signature="e#489#490#0" expanded="true" />
+            <element signature="e#545#546#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/iesb/batalhanaval/view/example1/CellSelectionSet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="38" column="16" selection-start-line="38" selection-start-column="16" selection-end-line="38" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#395#396#0" expanded="true" />
+            <element signature="e#435#436#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/iesb/batalhanaval/view/example1/ColorSelectedTableCells.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.050822124">
+          <caret line="29" column="13" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -29,24 +29,26 @@ public class TableCellRendererImpl extends DefaultTableCellRenderer {
     public Component getTableCellRendererComponent(final JTable table, final Object value, final boolean isSelected, final boolean hasFocus, final int row, final int column) {
         Component renderer = super.getTableCellRendererComponent(table, value, isSelected, hasFocus, row, column);
         renderer.setForeground(Color.RED);
-//
 //        setForeground( (column == this.column && row == this.row) ? Color.red : Color.black );
-//
+
+
         if (isSelected) {
             Location location = (Location) table.getModel().getValueAt(row, column);
 //            location.setIcon(Icon.EMPTY);
             System.out.println("Setando Empty");
-//            setIcon(location.getIcon().getIcon());
 
             if (location.getIcon() == Icon.WATER) {
                 setText("AGUA!");
                 renderer.setBackground(Color.BLUE);
+                setIcon(configureIcon(location.getIcon()));
             }
         } else {
+            System.out.println("getText() = " + getText());
+            System.out.println("Icone null");
             renderer.setBackground(table.getBackground());
+            setIcon(null);
         }
-//        setText("");
-
+        setText("");
         return this;
     }
 
@@ -78,7 +80,7 @@ public class TableCellRendererImpl extends DefaultTableCellRenderer {
         if (value == null) {
             return;
         }
-        
+
         Object result = value;
         if (value instanceof Location) {
             Location location = (Location) value;

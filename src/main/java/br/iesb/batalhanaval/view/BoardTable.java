@@ -34,6 +34,7 @@ public class BoardTable extends JTable {
 //        System.out.println("Prepare component!");
 //        JLabel jLabel = (JLabel) component;
         if (isRowSelected(row) && isColumnSelected(column)) {
+            component.setBackground(Color.BLACK);
 //            Location location = (Location) myTableModel.getValueAt(row, column);
 //            location.setIcon(Icon.EMPTY);
 //
@@ -47,10 +48,17 @@ public class BoardTable extends JTable {
         return component;
     }
 
+    @Override
+    public boolean isCellEditable(int row, int column) {
+        return false;
+    }
+
     protected void initializeVariables() {
         this.setRowHeight(30);
         this.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
         this.setCellSelectionEnabled(true);
+        this.setColumnSelectionAllowed(false);
+        this.setRowSelectionAllowed(false);
 
         this.addMouseListener(new MouseAdapter() {
             @Override
@@ -63,10 +71,9 @@ public class BoardTable extends JTable {
                 System.out.println("Icon: " + location.getIcon().toString());
 //                setDefaultRenderer(Object.class, new TableCellRendererImpl(row, column));
 //                getColumnModel().getColumn(0).setCellRenderer(new TableCellRendererImpl(0, 1));
+                repaint();
             }
         });
-
-
 
         configureScrollPane();
     }
