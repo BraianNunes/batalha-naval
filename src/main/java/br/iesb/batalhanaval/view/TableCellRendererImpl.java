@@ -12,6 +12,15 @@ import java.awt.*;
  */
 public class TableCellRendererImpl extends DefaultTableCellRenderer {
 
+    private int column;
+    private int row;
+
+    public TableCellRendererImpl(int row, int column) {
+        this.row = row;
+        this.column = column;
+        setHorizontalAlignment(CENTER);
+    }
+
     public TableCellRendererImpl() {
         setHorizontalAlignment(CENTER);
     }
@@ -20,7 +29,9 @@ public class TableCellRendererImpl extends DefaultTableCellRenderer {
     public Component getTableCellRendererComponent(final JTable table, final Object value, final boolean isSelected, final boolean hasFocus, final int row, final int column) {
         Component renderer = super.getTableCellRendererComponent(table, value, isSelected, hasFocus, row, column);
         renderer.setForeground(Color.RED);
-
+//
+//        setForeground( (column == this.column && row == this.row) ? Color.red : Color.black );
+//
         if (isSelected) {
             Location location = (Location) table.getModel().getValueAt(row, column);
 //            location.setIcon(Icon.EMPTY);
@@ -29,13 +40,11 @@ public class TableCellRendererImpl extends DefaultTableCellRenderer {
 
             if (location.getIcon() == Icon.WATER) {
                 setText("AGUA!");
-
+                renderer.setBackground(Color.BLUE);
             }
-
-
-//            setBackground(Color.BLUE);
+        } else {
+            renderer.setBackground(table.getBackground());
         }
-
 //        setText("");
 
         return this;
@@ -74,6 +83,7 @@ public class TableCellRendererImpl extends DefaultTableCellRenderer {
         if (value instanceof Location) {
             Location location = (Location) value;
             result = location.getIcon().getIcon();
+//            result = configureIcon(Icon.HIT);
         }
 
         super.setValue(result);

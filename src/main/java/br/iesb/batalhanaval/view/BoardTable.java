@@ -60,11 +60,13 @@ public class BoardTable extends JTable {
 
 //                System.out.println("Row: " + getSelectedRow() + " Column: " + getSelectedColumn());
                 Location location = (Location) myTableModel.getValueAt(row, column);
-
                 System.out.println("Icon: " + location.getIcon().toString());
+//                setDefaultRenderer(Object.class, new TableCellRendererImpl(row, column));
+//                getColumnModel().getColumn(0).setCellRenderer(new TableCellRendererImpl(0, 1));
             }
         });
-        
+
+
 
         configureScrollPane();
     }
