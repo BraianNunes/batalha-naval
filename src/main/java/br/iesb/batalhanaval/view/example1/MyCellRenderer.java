@@ -10,14 +10,14 @@ import java.awt.*;
 class MyCellRenderer extends DefaultTableCellRenderer {
     private boolean showSelected = false;
     private byte colorSwitcher;
-    private CellSelectionSet cellSelectionSet;
+    private CellSelectionSet2 cellSelectionSet;
 
-    public MyCellRenderer(CellSelectionSet cellSelectionSet) {
+    public MyCellRenderer(CellSelectionSet2 cellSelectionSet) {
         this.cellSelectionSet = cellSelectionSet;
     }
 
     @Override
-    public Component getTableCellRendererComponent(JTable table,Object value, boolean isSelected, boolean hasFocus, int row,int column) {
+    public Component getTableCellRendererComponent(JTable table, Object value, boolean isSelected, boolean hasFocus, int row, int column) {
         Component superComponent = super.getTableCellRendererComponent(table, value, isSelected, hasFocus, row, column);
 
         if (cellSelectionSet.contains(row, column)
@@ -25,12 +25,10 @@ class MyCellRenderer extends DefaultTableCellRenderer {
 
             superComponent.setBackground(Color.GREEN);
             setIcon(configureIcon(br.iesb.batalhanaval.model.Icon.HIT));
-        }
-        else if (table.isCellSelected(row, column)){
+        } else if (table.isCellSelected(row, column)) {
             superComponent.setBackground(table.getSelectionBackground());
             setIcon(null);
-        }
-        else {
+        } else {
             superComponent.setBackground(table.getBackground());
             setIcon(null);
         }

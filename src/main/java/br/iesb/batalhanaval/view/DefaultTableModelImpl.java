@@ -67,6 +67,8 @@ public class DefaultTableModelImpl extends AbstractTableModel {
         super.setValueAt(aValue, rowIndex, columnIndex);
     }
 
+    // FIXME Implementar método!
+
     /**
      * Seta a localização dos navios
      * Deve instanciar o objeto correspondente ex.: Navio, Porta aviões, etc...

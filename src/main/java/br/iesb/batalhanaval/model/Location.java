@@ -7,8 +7,14 @@ public class Location {
     private int axisRow;
     private int axisColumn;
     private Icon icon;
+    private boolean newlySelected = true;
 
     public Location() {
+    }
+
+    public Location(final int finalAxisRow, final int finalAxisColumn) {
+        axisRow = finalAxisRow;
+        axisColumn = finalAxisColumn;
     }
 
     public Location(Icon icon) {
@@ -34,13 +40,25 @@ public class Location {
     public int getAxisColumn() {
         return axisColumn;
     }
-    
+
     public void setAxisColumn(final int finalAxisColumn) {
         axisColumn = finalAxisColumn;
     }
-    
+
     @Override
     public String toString() {
         return "L";
+    }
+
+    public boolean is(int row, int column) {
+        return axisRow == row && axisColumn == column;
+    }
+
+    public boolean isNewlySelected() {
+        return newlySelected;
+    }
+
+    public void setNewlySelected(boolean newlySelected) {
+        this.newlySelected = newlySelected;
     }
 }

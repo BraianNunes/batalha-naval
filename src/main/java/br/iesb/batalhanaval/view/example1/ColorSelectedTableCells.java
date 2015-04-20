@@ -9,12 +9,13 @@ import java.awt.event.ActionListener;
  * Created by Braian Nunes on 4/19/2015.
  */
 public class ColorSelectedTableCells extends JPanel {
-    private JButton btn = new JButton("color cells");
     public static final Object[][] DATA = new Object[3][3];
     public static final String[] COLS = {"A", "B", "C"};
     private static final int PREF_WIDTH = 400;
     private static final int PREF_HEIGHT = 300;
-    private static CellSelectionSet cellSelectionSet = new CellSelectionSet();
+    private static CellSelectionSet2 cellSelectionSet = new CellSelectionSet2();
+
+    private JButton btn = new JButton("color cells");
     private MyCellRenderer myCellRenderer = new MyCellRenderer(cellSelectionSet);
 
     private JTable table = new JTable(DATA, COLS) {
@@ -72,11 +73,6 @@ public class ColorSelectedTableCells extends JPanel {
         });
     }
 
-    @Override
-    public Dimension getPreferredSize() {
-        return new Dimension(PREF_WIDTH, PREF_HEIGHT);
-    }
-
     private static void createAndShowUI() {
         JFrame frame = new JFrame();
         frame.getContentPane().add(new ColorSelectedTableCells());
@@ -92,5 +88,10 @@ public class ColorSelectedTableCells extends JPanel {
                 createAndShowUI();
             }
         });
+    }
+
+    @Override
+    public Dimension getPreferredSize() {
+        return new Dimension(PREF_WIDTH, PREF_HEIGHT);
     }
 }
