@@ -1,20 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3986accf-10a0-44e5-963d-2539ad448bbb" name="Default" comment="Atualização da cor da célula.">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/bomb.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/fire.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/fire.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/water.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/wave.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/br/iesb/batalhanaval/view/BoardTable.java" afterPath="$PROJECT_DIR$/src/main/java/br/iesb/batalhanaval/view/BoardTable.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/br/iesb/batalhanaval/view/example1/Cell.java" afterPath="$PROJECT_DIR$/src/main/java/br/iesb/batalhanaval/view/example1/Cell.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/br/iesb/batalhanaval/view/DefaultTableModelImpl.java" afterPath="$PROJECT_DIR$/src/main/java/br/iesb/batalhanaval/view/DefaultTableModelImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/br/iesb/batalhanaval/model/Icon.java" afterPath="$PROJECT_DIR$/src/main/java/br/iesb/batalhanaval/model/Icon.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/br/iesb/batalhanaval/view/JScrollPaneImpl.java" afterPath="$PROJECT_DIR$/src/main/java/br/iesb/batalhanaval/view/JScrollPaneImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/br/iesb/batalhanaval/model/Location.java" afterPath="$PROJECT_DIR$/src/main/java/br/iesb/batalhanaval/model/Location.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/br/iesb/batalhanaval/view/SeaBattleBoard.java" afterPath="$PROJECT_DIR$/src/main/java/br/iesb/batalhanaval/view/SeaBattleBoard.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/br/iesb/batalhanaval/view/TableCellRendererImpl.java" afterPath="$PROJECT_DIR$/src/main/java/br/iesb/batalhanaval/view/TableCellRendererImpl.java" />
+    <list default="true" id="3986accf-10a0-44e5-963d-2539ad448bbb" name="Default" comment="- Imagem aparecendo nas células, porém está demorando muito quando os campos estão se esgotando.&#10;- Tentando o posicionamento dos barcos.">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path=".idea/dataSources.local.xml" />
@@ -48,7 +35,7 @@
           <file leaf-file-name="BoardTable.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/main/java/br/iesb/batalhanaval/view/BoardTable.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="1.4822695">
+                <state vertical-scroll-proportion="1.1875">
                   <caret line="94" column="49" selection-start-line="94" selection-start-column="49" selection-end-line="94" selection-end-column="49" />
                   <folding>
                     <element signature="imports" expanded="true" />
@@ -77,7 +64,7 @@
           <file leaf-file-name="TableCellRendererImpl.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/main/java/br/iesb/batalhanaval/view/TableCellRendererImpl.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.5531915">
+                <state vertical-scroll-proportion="0.4431818">
                   <caret line="51" column="9" selection-start-line="51" selection-start-column="9" selection-end-line="51" selection-end-column="9" />
                   <folding>
                     <element signature="imports" expanded="true" />
@@ -1300,7 +1287,7 @@
       <workItem from="1429626402891" duration="252000" />
       <workItem from="1429626664462" duration="113000" />
       <workItem from="1429626787929" duration="7261000" />
-      <workItem from="1429647947282" duration="4649000" />
+      <workItem from="1429647947282" duration="4761000" />
     </task>
     <task id="LOCAL-00001" summary="Primeiro commit do projeto.">
       <created>1429126690788</created>
@@ -1362,11 +1349,23 @@
       <option name="project" value="LOCAL" />
       <updated>1429488073571</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="- Imagem aparecendo nas células, porém está demorando muito quando os campos estão se esgotando.&#10;- Tentando o posicionamento dos barcos.">
+      <created>1429652663243</created>
+      <option name="number" value="00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1429652663243</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Configuracao do porta aviões.">
+      <created>1429652702988</created>
+      <option name="number" value="00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1429652702988</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="138480000" />
+    <option name="totallyTimeSpent" value="138592000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1388,7 +1387,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24605678" sideWeight="0.5372737" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3336887" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.37894738" sideWeight="0.4627263" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23157895" sideWeight="0.4627263" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.18105263" sideWeight="0.47441363" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="BrainLeg" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.33013844" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32912722" sideWeight="0.4968051" order="13" side_tool="false" content_ui="tabs" />
@@ -1468,7 +1467,9 @@
     <MESSAGE value="Teste commit!" />
     <MESSAGE value="Default commit!" />
     <MESSAGE value="Atualização da cor da célula." />
-    <option name="LAST_COMMIT_MESSAGE" value="Atualização da cor da célula." />
+    <MESSAGE value="- Imagem aparecendo nas células, porém está demorando muito quando os campos estão se esgotando.&#10;- Tentando o posicionamento dos barcos." />
+    <MESSAGE value="Configuracao do porta aviões." />
+    <option name="LAST_COMMIT_MESSAGE" value="Configuracao do porta aviões." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -1851,8 +1852,8 @@
             <element signature="e#267#268#0" expanded="true" />
             <element signature="e#305#306#0" expanded="true" />
             <element signature="e#347#348#0" expanded="true" />
-            <element signature="e#379#380#0" expanded="true" />
-            <element signature="e#487#497#0" expanded="true" />
+            <element signature="e#374#375#0" expanded="true" />
+            <element signature="e#482#492#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1911,7 +1912,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/br/iesb/batalhanaval/view/BoardTable.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.4822695">
+        <state vertical-scroll-proportion="1.1875">
           <caret line="94" column="49" selection-start-line="94" selection-start-column="49" selection-end-line="94" selection-end-column="49" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1921,7 +1922,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/br/iesb/batalhanaval/view/TableCellRendererImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5531915">
+        <state vertical-scroll-proportion="0.4431818">
           <caret line="51" column="9" selection-start-line="51" selection-start-column="9" selection-end-line="51" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
