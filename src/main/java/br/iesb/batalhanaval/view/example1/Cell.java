@@ -5,8 +5,9 @@ package br.iesb.batalhanaval.view.example1;
  */
 public class Cell {
     private int row, column;
+    private boolean newlySelected = true;
 
-    public Cell(int row, int column){
+    public Cell(int row, int column) {
         this.row = row;
         this.column = column;
     }
@@ -14,8 +15,6 @@ public class Cell {
     public boolean is(int r, int c) {
         return row == r && column == c;
     }
-
-    private boolean newlySelected = true;
 
     public boolean isNewlySelected() {
         return newlySelected;

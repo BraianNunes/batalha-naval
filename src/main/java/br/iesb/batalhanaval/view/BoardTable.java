@@ -1,5 +1,9 @@
 package br.iesb.batalhanaval.view;
 
+import br.iesb.batalhanaval.model.Embarcacao;
+import br.iesb.batalhanaval.model.Location;
+import br.iesb.batalhanaval.model.PortaAvioes;
+
 import javax.swing.*;
 import javax.swing.table.JTableHeader;
 import java.awt.*;
@@ -25,7 +29,7 @@ public class BoardTable extends JTable {
         super(defaultTableModel);
         super.setDefaultRenderer(Object.class, new TableCellRendererImpl(locationSelectionSet));
         this.myTableModel = defaultTableModel;
-        initializeVariables();
+        initParameters();
     }
 
     @Override
@@ -57,37 +61,52 @@ public class BoardTable extends JTable {
 //            }
 //        }
         if (!toggle && !extend) {
+            System.out.println("Setando locations");
             locationSelectionSet.add(rowIndex, columnIndex);
         }
     }
 
-    protected void initializeVariables() {
+    protected void initParameters() {
         this.setRowHeight(30);
         this.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
         this.setCellSelectionEnabled(true);
         this.setColumnSelectionAllowed(false);
         this.setRowSelectionAllowed(false);
         this.setDragEnabled(false);
-
-        this.addMouseListener(new MouseAdapter() {
-            @Override
-            public void mouseClicked(MouseEvent e) {
-                int row = getSelectedRow();
-                int column = getSelectedColumn();
-
-                System.out.println("Mouse clicked!");
-
-                for (int i = 0; i < locationSelectionSet.getSize(); i++) {
-                    locationSelectionSet.getElementAt(i).setNewlySelected(false);
-                }
-
-                repaint();
-            }
-        });
-
+        this.addMouseListener(new MouseClickedAdapter());
         configureScrollPane();
+
+//        configureSetLocations();
     }
-    
+
+    private void configureSetLocations() {
+        Embarcacao embarcacao = new PortaAvioes();
+        for (final Location location : embarcacao.getLocations()) {
+            this.locationSelectionSet.add(location.getAxisRow(), location.getAxisColumn());
+        }
+    }
+
+    public class MouseClickedAdapter extends MouseAdapter {
+        @Override
+        public void mouseClicked(final MouseEvent e) {
+            int row = getSelectedRow();
+            int column = getSelectedColumn();
+
+            System.out.println("Row: " + row + " Column: " + column);
+
+            for (int i = 0; i < locationSelectionSet.getSize(); i++) {
+                locationSelectionSet.getElementAt(i).setNewlySelected(false);
+            }
+
+//                    myTableModel.fireTableDataChanged();
+//                    myTableModel.fireTableCellUpdated(row, column);
+//                    Rectangle rectangle = new Rectangle(new Point(row, column));
+//                    repaint(rectangle);
+            repaint();
+
+        }
+    }
+
     private boolean isUnselected(MouseEvent e) {
         Point pt = e.getPoint();
         int row = rowAtPoint(pt);

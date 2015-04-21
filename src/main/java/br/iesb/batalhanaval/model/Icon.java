@@ -4,9 +4,9 @@ package br.iesb.batalhanaval.model;
  * Created by abraao.queiroz on 10/04/2015.
  */
 public enum Icon {
-    WATER("W"),
-    HIT("H"),
-    EMPTY("-");
+    WATER("bomb_cartoon.png"),
+    HIT("fire.png"),
+    EMPTY("wave.png");
 
     private String icon;
 

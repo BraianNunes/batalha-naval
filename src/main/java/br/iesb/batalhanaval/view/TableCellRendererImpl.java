@@ -3,12 +3,9 @@ package br.iesb.batalhanaval.view;
 import br.iesb.batalhanaval.model.Icon;
 import br.iesb.batalhanaval.model.Location;
 
-import javax.imageio.ImageIO;
 import javax.swing.*;
 import javax.swing.table.DefaultTableCellRenderer;
 import java.awt.*;
-import java.awt.image.BufferedImage;
-import java.io.IOException;
 
 /**
  * Created by abraao.queiroz on 16/04/2015.
@@ -25,69 +22,60 @@ public class TableCellRendererImpl extends DefaultTableCellRenderer {
     @Override
     public Component getTableCellRendererComponent(final JTable table, final Object value, final boolean isSelected, final boolean hasFocus, final int row, final int column) {
         Component renderer = super.getTableCellRendererComponent(table, value, isSelected, hasFocus, row, column);
-        renderer.setForeground(Color.RED);
+//        renderer.setForeground(Color.RED);
+
+//        System.out.println("..........");
 
         if (locationSelectionSet.contains(row, column) && !locationSelectionSet.getLocationAt(row, column).isNewlySelected()) {
+
             renderer.setBackground(Color.GREEN);
-            setIcon(configureIcon(Icon.HIT));
+            System.out.println("contains");
+            Location location = ((Location) table.getValueAt(row, column));
+            if (location.getIcon() == Icon.HIT) {
+                setIcon(configureIcon(location.getIcon(), 60, 60));
+//                setIcon(null);
+//                setBackground(Color.red);
+            } else {
+                setIcon(configureIcon(location.getIcon(), 25, 25));
+                setBackground(Color.decode("#499DF5"));//"#006994"));
+            }
 
         } else if (table.isCellSelected(row, column)) {
             renderer.setBackground(table.getSelectionBackground());
-            setIcon(null);
+//            setIcon(configureIcon(location.getIcon()));
 
         } else {
+//            System.out.println("not contains 2");
             renderer.setBackground(table.getBackground());
             setIcon(null);
+//            setBackground(Color.decode("#006994"));
         }
 
         return this;
     }
 
-    /*
-    private ImageIcon errorIcon = (ImageIcon) UIManager.getIcon("OptionPane.errorIcon");
-    private ImageIcon infoIcon = (ImageIcon) UIManager.getIcon("OptionPane.informationIcon");
-    private ImageIcon warnIcon = (ImageIcon) UIManager.getIcon("OptionPane.warningIcon");
-    private ImageIcon questIcon = (ImageIcon) UIManager.getIcon("OptionPane.questionIcon");
-    * */
+    private ImageIcon configureIcon(Icon icon, int witdh, int height) {
+        ImageIcon imageIcon = new ImageIcon(getClass().getResource("/" + icon.getIcon()));
+        Image image = imageIcon.getImage();
+        Image newImage = image.getScaledInstance(witdh, height, Image.SCALE_SMOOTH);
+        imageIcon = new ImageIcon(newImage);
 
-    private ImageIcon configureIcon(Icon icon) {
-        String uiIcon = "OptionPane.informationIcon";
-        if (icon == Icon.HIT) {
-            uiIcon = "OptionPane.errorIcon";
-        } else if (icon == Icon.WATER) {
-            uiIcon = "OptionPane.questionIcon";
-        }
-
-//        ImageIcon informationIcon = (ImageIcon) UIManager.getIcon(uiIcon);
-        try {
-            BufferedImage image = ImageIO.read(getClass().getResource("/Resources/Flower0.png"));
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-
-        ImageIcon informationIcon = new ImageIcon(getClass().getResource("images/gif_bomb.png"));
-        System.out.println("informationIcon = " + informationIcon);
-
-        Image image = informationIcon.getImage();
-        Image newImage = image.getScaledInstance(20, 20, Image.SCALE_SMOOTH);
-        informationIcon = new ImageIcon(newImage);
-
-        return informationIcon;
+        return imageIcon;
     }
 
-    @Override
-    protected void setValue(final Object value) {
-        if (value == null) {
-            return;
-        }
-
-        Object result = value;
-        if (value instanceof Location) {
-            Location location = (Location) value;
-            result = location.getIcon().getIcon();
-//            result = configureIcon(Icon.HIT);
-        }
-
-        super.setValue(result);
-    }
+//    @Override
+//    protected void setValue(final Object value) {
+//        if (value == null) {
+//            return;
+//        }
+//
+//        Object result = value;
+//        if (value instanceof Location) {
+//            Location location = (Location) value;
+//            result = location.getIcon().getIcon();
+////            result = configureIcon(Icon.HIT);
+//        }
+//
+//        super.setValue("");
+//    }
 }

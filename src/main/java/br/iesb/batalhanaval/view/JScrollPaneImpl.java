@@ -19,7 +19,7 @@ public class JScrollPaneImpl extends JScrollPane {
         // Column Header
         JTableHeader tableHeader = jtable.getTableHeader();
         tableHeader.setPreferredSize(new Dimension(100, 30));
-        
+
         // Configure scroll
         setColumnHeaderView(tableHeader);
 

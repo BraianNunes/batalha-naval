@@ -47,7 +47,7 @@ public class Location {
 
     @Override
     public String toString() {
-        return "L";
+        return "";
     }
 
     public boolean is(int row, int column) {

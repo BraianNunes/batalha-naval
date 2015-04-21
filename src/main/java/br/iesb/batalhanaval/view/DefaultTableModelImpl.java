@@ -1,7 +1,9 @@
 package br.iesb.batalhanaval.view;
 
+import br.iesb.batalhanaval.model.Embarcacao;
 import br.iesb.batalhanaval.model.Icon;
 import br.iesb.batalhanaval.model.Location;
+import br.iesb.batalhanaval.model.PortaAvioes;
 
 import javax.swing.table.AbstractTableModel;
 import java.util.ArrayList;
@@ -13,20 +15,25 @@ import java.util.List;
 public class DefaultTableModelImpl extends AbstractTableModel {
     protected static final String[] COLUMN_HEADER = {"1", "2", "3", "4", "5", "6", "7", "8", "9", "10"};
     protected static final String[] ROW_HEADER = {"A", "B", "C", "D", "E", "F", "G", "H", "I", "J"};
-
-    private List<Location> listLocation;
+    private List<Location> listLocation = new ArrayList<Location>();
 
     public DefaultTableModelImpl() {
-        createLocations();
+        fillLocations();
+        configureLocations();
     }
 
-    private void createLocations() {
-        listLocation = new ArrayList<Location>();
+    private void configureLocations() {
+        Embarcacao portaAvioes = new PortaAvioes();
+//        adicionarEmbarcacao(portaAvioes);
+
+    }
+
+    private void fillLocations() {
         for (int row = 0; row < ROW_HEADER.length; row++) {
             for (int column = 0; column < COLUMN_HEADER.length; column++) {
                 Location location = new Location();
 
-                // FIXME remover condição
+//                // FIXME remover condição
                 if (row % 2 == 0) {
                     location.setIcon(Icon.HIT);
                 } else {
@@ -37,6 +44,12 @@ public class DefaultTableModelImpl extends AbstractTableModel {
                 location.setAxisColumn(column);
                 listLocation.add(location);
             }
+        }
+    }
+
+    private void adicionarEmbarcacao(final Embarcacao embarcacao) {
+        for (final Location location : embarcacao.getLocations()) {
+            this.listLocation.add(location);
         }
     }
 

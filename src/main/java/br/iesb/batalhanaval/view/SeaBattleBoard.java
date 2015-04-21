@@ -19,12 +19,13 @@ public class SeaBattleBoard extends JFrame {
 
         sb.setTitle("SeaBattleBoard");
         sb.setContentPane(new SeaBattleBoard().jp_Main);
+        sb.setLocationRelativeTo(null);
         sb.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         sb.setResizable(false);
         sb.pack();
         sb.setVisible(true);
     }
-    
+
     private void createUIComponents() {
         tb_Player1 = new BoardTable(new DefaultTableModelImpl());
         this.jsp_Player1 = new JScrollPaneImpl(tb_Player1);
