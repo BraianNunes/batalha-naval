@@ -1,8 +1,6 @@
 package br.iesb.batalhanaval.view;
 
 import br.iesb.batalhanaval.model.Embarcacao;
-import br.iesb.batalhanaval.model.Location;
-import br.iesb.batalhanaval.model.PortaAvioes;
 
 import javax.swing.*;
 import javax.swing.table.JTableHeader;
@@ -40,24 +38,17 @@ public class BoardTable extends JTable {
         this.setDragEnabled(false);
         this.addMouseListener(new MouseClickedAdapter());
         configureScrollPane();
-
-//        configureSetLocations();
-    }
-
-    private void configureSetLocations() {
-        Embarcacao embarcacao = new PortaAvioes();
-        for (final Location location : embarcacao.getLocations()) {
-            this.locationSelectionSet.add(location.getAxisRow(), location.getAxisColumn());
-        }
     }
 
     public class MouseClickedAdapter extends MouseAdapter {
         @Override
         public void mouseClicked(final MouseEvent e) {
+            System.out.println("Row: " + getSelectedRow() + " Column: " + getSelectedColumn());
+
             Embarcacao embarcacao = (Embarcacao) getModel().getValueAt(getSelectedRow(), getSelectedColumn());
             if (embarcacao != null) {
                 if (embarcacao.getLife() <= 0) {
-                    JOptionPane.showMessageDialog(null, "A embarcacao " + embarcacao.getName() + " foi destruida!");
+                    JOptionPane.showMessageDialog(null, "A embarcacao \"" + embarcacao.getName() + "\" foi destruida!");
                 }
             }
         }

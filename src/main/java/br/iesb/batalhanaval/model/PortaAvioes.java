@@ -14,7 +14,7 @@ public class PortaAvioes implements Embarcacao {
 
     @Override
     public String getName() {
-        return "Porta aviões!";
+        return "Porta avioes";
     }
 
     @Override

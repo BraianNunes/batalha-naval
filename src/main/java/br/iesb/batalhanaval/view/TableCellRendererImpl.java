@@ -26,8 +26,7 @@ public class TableCellRendererImpl extends DefaultTableCellRenderer {
         if (localizacaoExata(table, row, column)) {
             setIcon(configureIcon(Icon.HIT, 60, 60));
 
-        } else if (table.getSelectedRow() == row && table.getSelectedColumn() == column) {
-            System.out.println("isCellSelected");
+        } else if (this.locationSelectionSet.contains(row, column, Icon.WATER)) {
             renderer.setBackground(table.getSelectionBackground());
             setIcon(configureIcon(Icon.WATER, 25, 25));
 
@@ -41,7 +40,7 @@ public class TableCellRendererImpl extends DefaultTableCellRenderer {
     }
 
     private boolean localizacaoExata(final JTable table, final int row, final int column) {
-        if (this.locationSelectionSet.contains(row, column)) {
+        if (this.locationSelectionSet.contains(row, column, Icon.HIT)) {
             return true;
         }
 
@@ -49,9 +48,12 @@ public class TableCellRendererImpl extends DefaultTableCellRenderer {
             Embarcacao embarcacao = (Embarcacao) table.getModel().getValueAt(table.getSelectedRow(), table.getSelectedColumn());
             if (embarcacao != null) {
                 embarcacao.decrementLife();
-                this.locationSelectionSet.add(table.getSelectedRow(), table.getSelectedColumn());
+                this.locationSelectionSet.add(table.getSelectedRow(), table.getSelectedColumn(), Icon.HIT);
                 return true;
             }
+
+            // Adiciona água a lista
+            this.locationSelectionSet.add(table.getSelectedRow(), table.getSelectedColumn(), Icon.WATER);
         }
 
         return false;

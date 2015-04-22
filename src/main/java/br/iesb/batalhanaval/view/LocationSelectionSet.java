@@ -1,5 +1,6 @@
 package br.iesb.batalhanaval.view;
 
+import br.iesb.batalhanaval.model.Icon;
 import br.iesb.batalhanaval.model.Location;
 
 import java.util.ArrayList;
@@ -11,9 +12,9 @@ import java.util.List;
 public class LocationSelectionSet {
     private List<Location> locations = new ArrayList<Location>();
 
-    public void add(int r, int c) {
-        if (!contains(r, c)) {
-            locations.add(new Location(r, c));
+    public void add(int r, int c, Icon icon) {
+        if (!contains(r, c, icon)) {
+            locations.add(new Location(r, c, icon));
         }
     }
 
@@ -21,9 +22,9 @@ public class LocationSelectionSet {
         return locations.size() <= 1;
     }
 
-    public boolean contains(int row, int column) {
+    public boolean contains(int row, int column, Icon icon) {
         for (Location location : locations) {
-            if (location.is(row, column)) {
+            if (location.is(row, column) && location.getIcon() == icon) {
                 return true;
             }
         }

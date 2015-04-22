@@ -18,6 +18,12 @@ public class Location {
         axisColumn = finalAxisColumn;
     }
 
+    public Location(final int finalAxisRow, final int finalAxisColumn, Icon icon) {
+        axisRow = finalAxisRow;
+        axisColumn = finalAxisColumn;
+        this.icon = icon;
+    }
+
     public Location(Icon icon) {
         this.icon = icon;
     }

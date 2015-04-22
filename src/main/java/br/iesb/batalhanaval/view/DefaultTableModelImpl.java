@@ -1,9 +1,6 @@
 package br.iesb.batalhanaval.view;
 
-import br.iesb.batalhanaval.model.Embarcacao;
-import br.iesb.batalhanaval.model.Icon;
-import br.iesb.batalhanaval.model.Location;
-import br.iesb.batalhanaval.model.PortaAvioes;
+import br.iesb.batalhanaval.model.*;
 
 import javax.swing.table.AbstractTableModel;
 import java.util.ArrayList;
@@ -27,6 +24,17 @@ public class DefaultTableModelImpl extends AbstractTableModel {
         Embarcacao portaAvioes = new PortaAvioes();
         adicionarEmbarcacao(portaAvioes);
 
+        Embarcacao navio4Canos = new Navio4Canos();
+        adicionarEmbarcacao(navio4Canos);
+
+        Embarcacao navio3Canos = new Navio3Canos();
+        adicionarEmbarcacao(navio3Canos);
+
+        Embarcacao navio2Canos = new Navio2Canos();
+        adicionarEmbarcacao(navio2Canos);
+
+        Embarcacao navio1Cano = new Navio1Cano();
+        adicionarEmbarcacao(navio1Cano);
     }
 
     private void fillLocations() {
