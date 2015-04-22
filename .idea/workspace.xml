@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3986accf-10a0-44e5-963d-2539ad448bbb" name="Default" comment="Refatoração de código!">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/br/iesb/batalhanaval/view/BoardTable.java" afterPath="$PROJECT_DIR$/src/main/java/br/iesb/batalhanaval/view/BoardTable.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/br/iesb/batalhanaval/view/DefaultTableModelImpl.java" afterPath="$PROJECT_DIR$/src/main/java/br/iesb/batalhanaval/view/DefaultTableModelImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/br/iesb/batalhanaval/model/Location.java" afterPath="$PROJECT_DIR$/src/main/java/br/iesb/batalhanaval/model/Location.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/br/iesb/batalhanaval/view/LocationSelectionSet.java" afterPath="$PROJECT_DIR$/src/main/java/br/iesb/batalhanaval/view/LocationSelectionSet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/br/iesb/batalhanaval/model/PortaAvioes.java" afterPath="$PROJECT_DIR$/src/main/java/br/iesb/batalhanaval/model/PortaAvioes.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/br/iesb/batalhanaval/view/TableCellRendererImpl.java" afterPath="$PROJECT_DIR$/src/main/java/br/iesb/batalhanaval/view/TableCellRendererImpl.java" />
+    <list default="true" id="3986accf-10a0-44e5-963d-2539ad448bbb" name="Default" comment="O posicionamento dos barcos foi realizado!">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path=".idea/dataSources.local.xml" />
@@ -41,7 +35,7 @@
           <file leaf-file-name="DefaultTableModelImpl.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/main/java/br/iesb/batalhanaval/view/DefaultTableModelImpl.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.15407854">
+                <state vertical-scroll-proportion="0.17258883">
                   <caret line="15" column="42" selection-start-line="15" selection-start-column="42" selection-end-line="15" selection-end-column="42" />
                   <folding>
                     <element signature="imports" expanded="true" />
@@ -62,10 +56,10 @@
                     <element signature="e#261#262#0" expanded="true" />
                     <element signature="e#302#303#0" expanded="true" />
                     <element signature="e#344#345#0" expanded="true" />
-                    <element signature="e#376#377#0" expanded="true" />
-                    <element signature="e#484#494#0" expanded="true" />
-                    <element signature="e#998#999#0" expanded="true" />
-                    <element signature="e#1028#1029#0" expanded="true" />
+                    <element signature="e#371#372#0" expanded="true" />
+                    <element signature="e#479#489#0" expanded="true" />
+                    <element signature="e#993#994#0" expanded="true" />
+                    <element signature="e#1018#1019#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -102,7 +96,7 @@
                   <caret line="21" column="8" selection-start-line="21" selection-start-column="8" selection-end-line="35" selection-end-column="25" />
                   <folding>
                     <element signature="imports" expanded="true" />
-                    <element signature="e#484#494#0" expanded="true" />
+                    <element signature="e#479#489#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -111,7 +105,7 @@
           <file leaf-file-name="BoardTable.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/main/java/br/iesb/batalhanaval/view/BoardTable.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.43504533">
+                <state vertical-scroll-proportion="0.48730963">
                   <caret line="50" column="102" selection-start-line="50" selection-start-column="102" selection-end-line="50" selection-end-column="102" />
                   <folding>
                     <element signature="imports" expanded="true" />
@@ -133,7 +127,7 @@
                     <element signature="e#371#372#0" expanded="true" />
                     <element signature="e#479#489#0" expanded="true" />
                     <element signature="e#993#994#0" expanded="true" />
-                    <element signature="e#1023#1024#0" expanded="true" />
+                    <element signature="e#1018#1019#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -152,7 +146,7 @@
                     <element signature="e#366#367#0" expanded="true" />
                     <element signature="e#474#484#0" expanded="true" />
                     <element signature="e#848#849#0" expanded="true" />
-                    <element signature="e#878#879#0" expanded="true" />
+                    <element signature="e#873#874#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -1416,7 +1410,7 @@
       <workItem from="1429626402891" duration="252000" />
       <workItem from="1429626664462" duration="113000" />
       <workItem from="1429626787929" duration="7261000" />
-      <workItem from="1429647947282" duration="16790000" />
+      <workItem from="1429647947282" duration="16839000" />
     </task>
     <task id="LOCAL-00001" summary="Primeiro commit do projeto.">
       <created>1429126690788</created>
@@ -1514,11 +1508,23 @@
       <option name="project" value="LOCAL" />
       <updated>1429662316181</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="O posicionamento dos barcos foi realizado!">
+      <created>1429664783372</created>
+      <option name="number" value="00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1429664783372</updated>
+    </task>
+    <task id="LOCAL-00018" summary="O posicionamento dos barcos foi realizado!">
+      <created>1429664801238</created>
+      <option name="number" value="00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1429664801238</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="150621000" />
+    <option name="totallyTimeSpent" value="150670000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1531,7 +1537,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" x="1787" y="104" width="124" height="584" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32842106" sideWeight="0.49574015" order="7" side_tool="false" content_ui="tabs" />
@@ -1541,8 +1547,8 @@
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" x="92" y="92" width="1736" height="856" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3336887" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3505263" sideWeight="0.4627263" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27578947" sideWeight="0.47441363" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3505263" sideWeight="0.4627263" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.27578947" sideWeight="0.47441363" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="BrainLeg" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.33013844" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32912722" sideWeight="0.4968051" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1627,7 +1633,8 @@
     <MESSAGE value="- A marcação dos campos em tabela já está sendo realizada;&#10;- Modificando a lista de localizações para uma lista de embarcações;" />
     <MESSAGE value="Identificando as embarcações e exibindo a descrição caso a mesma seja destruída." />
     <MESSAGE value="Refatoração de código!" />
-    <option name="LAST_COMMIT_MESSAGE" value="Refatoração de código!" />
+    <MESSAGE value="O posicionamento dos barcos foi realizado!" />
+    <option name="LAST_COMMIT_MESSAGE" value="O posicionamento dos barcos foi realizado!" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -2012,7 +2019,7 @@
           <caret line="21" column="8" selection-start-line="21" selection-start-column="8" selection-end-line="35" selection-end-column="25" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#484#494#0" expanded="true" />
+            <element signature="e#479#489#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2026,10 +2033,10 @@
             <element signature="e#261#262#0" expanded="true" />
             <element signature="e#302#303#0" expanded="true" />
             <element signature="e#344#345#0" expanded="true" />
-            <element signature="e#376#377#0" expanded="true" />
-            <element signature="e#484#494#0" expanded="true" />
-            <element signature="e#998#999#0" expanded="true" />
-            <element signature="e#1028#1029#0" expanded="true" />
+            <element signature="e#371#372#0" expanded="true" />
+            <element signature="e#479#489#0" expanded="true" />
+            <element signature="e#993#994#0" expanded="true" />
+            <element signature="e#1018#1019#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2046,14 +2053,14 @@
             <element signature="e#366#367#0" expanded="true" />
             <element signature="e#474#484#0" expanded="true" />
             <element signature="e#848#849#0" expanded="true" />
-            <element signature="e#878#879#0" expanded="true" />
+            <element signature="e#873#874#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/br/iesb/batalhanaval/view/DefaultTableModelImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.15407854">
+        <state vertical-scroll-proportion="0.17258883">
           <caret line="15" column="42" selection-start-line="15" selection-start-column="42" selection-end-line="15" selection-end-column="42" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -2075,7 +2082,7 @@
             <element signature="e#371#372#0" expanded="true" />
             <element signature="e#479#489#0" expanded="true" />
             <element signature="e#993#994#0" expanded="true" />
-            <element signature="e#1023#1024#0" expanded="true" />
+            <element signature="e#1018#1019#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2094,7 +2101,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/br/iesb/batalhanaval/view/BoardTable.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.43504533">
+        <state vertical-scroll-proportion="0.48730963">
           <caret line="50" column="102" selection-start-line="50" selection-start-column="102" selection-end-line="50" selection-end-column="102" />
           <folding>
             <element signature="imports" expanded="true" />
