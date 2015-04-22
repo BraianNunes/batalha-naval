@@ -9,4 +9,6 @@ public interface Embarcacao {
     int getLife();
 
     List<Location> getLocations();
+
+    void decrementLife();
 }

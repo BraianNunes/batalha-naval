@@ -1,7 +1,7 @@
 package br.iesb.batalhanaval.view;
 
+import br.iesb.batalhanaval.model.Embarcacao;
 import br.iesb.batalhanaval.model.Icon;
-import br.iesb.batalhanaval.model.Location;
 
 import javax.swing.*;
 import javax.swing.table.DefaultTableCellRenderer;
@@ -25,26 +25,17 @@ public class TableCellRendererImpl extends DefaultTableCellRenderer {
 //        renderer.setForeground(Color.RED);
 
         if (localizacaoExata(table, row, column)) {
-            Location location = locationSelectionSet.getLocationAt(row, column);
-            location.setNewlySelected(false);
-
-            System.out.println("Row: " + row + " Column: " + column);
-            System.out.println("Selected row: " + table.getSelectedRow() + " Selected Column: " + table.getSelectedColumn());
-
-//            Location location1 = ((Location) table.getValueAt(row, column));
             setIcon(configureIcon(Icon.HIT, 60, 60));
-//            table.repaint();
 
         } else if (table.isCellSelected(row, column)) {
-//            System.out.println("not contains 1");
+            System.out.println("isCellSelected");
             renderer.setBackground(table.getSelectionBackground());
             setIcon(configureIcon(Icon.WATER, 25, 25));
 
         } else {
-//            System.out.println("not contains 2");
             renderer.setBackground(table.getBackground());
             setIcon(null);
-//            setBackground(Color.decode("#006994"));
+            setBackground(Color.decode("#006994"));
         }
 
         return this;
@@ -56,8 +47,10 @@ public class TableCellRendererImpl extends DefaultTableCellRenderer {
         }
 
         if (table.getSelectedRow() == row && table.getSelectedColumn() == column) {
-            Location location = (Location) table.getModel().getValueAt(table.getSelectedRow(), table.getSelectedColumn());
-            if (location != null) {
+            Embarcacao embarcacao = (Embarcacao) table.getModel().getValueAt(table.getSelectedRow(), table.getSelectedColumn());
+            if (embarcacao != null) {
+//                System.out.println("Embarcacao localizada!");
+                embarcacao.decrementLife();
                 this.locationSelectionSet.add(table.getSelectedRow(), table.getSelectedColumn());
                 return true;
             }

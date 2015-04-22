@@ -16,7 +16,6 @@ public class SeaBattleBoard extends JFrame {
 
     public static void main(String[] args) {
         SeaBattleBoard sb = new SeaBattleBoard();
-        System.out.println("Main");
         sb.setTitle("SeaBattleBoard");
         sb.setContentPane(new SeaBattleBoard().jp_Main);
         sb.setLocationRelativeTo(null);

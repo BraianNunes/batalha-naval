@@ -5,7 +5,12 @@ import java.util.List;
  * Created by Braian Nunes on 4/21/2015.
  */
 public class PortaAvioes implements Embarcacao {
-    private static final int LIFE = 5;
+    private static int LIFE = 5;
+
+    @Override
+    public void decrementLife() {
+        LIFE -= 1;
+    }
 
     @Override
     public String getName() {
@@ -36,10 +41,15 @@ public class PortaAvioes implements Embarcacao {
         Location l5 = new Location(2, 1);
         locations.add(l5);
 
-        if (locations.size() != LIFE) {
-            throw new IllegalArgumentException("Quantidade de localizações incorretas para o " + this.getName());
-        }
+//        if (locations.size() != LIFE) {
+//            throw new IllegalArgumentException("Quantidade de localizações incorretas para o " + this.getName());
+//        }
 
         return locations;
+    }
+
+    @Override
+    public String toString() {
+        return "";
     }
 }

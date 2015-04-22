@@ -45,7 +45,7 @@ public class BoardTable extends JTable {
         this.setColumnSelectionAllowed(false);
         this.setRowSelectionAllowed(false);
         this.setDragEnabled(false);
-//        this.addMouseListener(new MouseClickedAdapter());
+        this.addMouseListener(new MouseClickedAdapter());
         configureScrollPane();
 
 //        configureSetLocations();
@@ -63,8 +63,11 @@ public class BoardTable extends JTable {
         public void mouseClicked(final MouseEvent e) {
             int row = getSelectedRow();
             int column = getSelectedColumn();
-            for (int i = 0; i < locationSelectionSet.getSize(); i++) {
-                locationSelectionSet.getElementAt(i).setNewlySelected(false);
+            Embarcacao embarcacao = (Embarcacao) getModel().getValueAt(getSelectedRow(), getSelectedColumn());
+            if (embarcacao != null) {
+                if (embarcacao.getLife() <= 0) {
+                    JOptionPane.showMessageDialog(null, "A embarcacao " + embarcacao.getName() + " foi destruida!");
+                }
             }
         }
     }
