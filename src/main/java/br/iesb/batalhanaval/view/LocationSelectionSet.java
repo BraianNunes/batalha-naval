@@ -39,14 +39,13 @@ public class LocationSelectionSet {
     }
 
     public Location getLocationAt(int row, int column) {
-        Location l = null;
-
         for (Location location : locations) {
             if (location.is(row, column)) {
-                l = location;
+                return location;
             }
 
         }
-        return l;
+
+        return null;
     }
 }

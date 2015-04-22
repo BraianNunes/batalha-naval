@@ -23,11 +23,12 @@ public class BoardTable extends JTable {
     private ImageIcon infoIcon = (ImageIcon) UIManager.getIcon("OptionPane.informationIcon");
     private ImageIcon errorIcon = (ImageIcon) UIManager.getIcon("OptionPane.errorIcon");
     private ImageIcon warnIcon = (ImageIcon) UIManager.getIcon("OptionPane.warningIcon");
+
     private boolean pressed;
 
     public BoardTable(DefaultTableModelImpl defaultTableModel) {
         super(defaultTableModel);
-        super.setDefaultRenderer(Object.class, new TableCellRendererImpl(locationSelectionSet));
+        this.setDefaultRenderer(Object.class, new TableCellRendererImpl(this.locationSelectionSet));
         this.myTableModel = defaultTableModel;
         initParameters();
     }
@@ -37,35 +38,6 @@ public class BoardTable extends JTable {
         return false;
     }
 
-//    @Override
-//    public boolean isCellSelected(final int row, final int column) {
-////        if (locationSelectionSet.containsOneOrLess()) {
-////            return isCellSelected(row, column);
-////        }
-//
-//        return locationSelectionSet.contains(row, column);
-//    }
-
-    @Override
-    public void changeSelection(final int rowIndex, final int columnIndex, final boolean toggle, final boolean extend) {
-        super.changeSelection(rowIndex, columnIndex, toggle, extend);
-//        if (toggle) {
-//            locationSelectionSet.add(rowIndex, columnIndex);
-//
-//        } else {
-//            if (extend) {
-//                locationSelectionSet.add(rowIndex, columnIndex);
-//
-//            } else {
-//                locationSelectionSet.add(rowIndex, columnIndex);
-//            }
-//        }
-        if (!toggle && !extend) {
-            System.out.println("Setando locations");
-            locationSelectionSet.add(rowIndex, columnIndex);
-        }
-    }
-
     protected void initParameters() {
         this.setRowHeight(30);
         this.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
@@ -73,7 +45,7 @@ public class BoardTable extends JTable {
         this.setColumnSelectionAllowed(false);
         this.setRowSelectionAllowed(false);
         this.setDragEnabled(false);
-        this.addMouseListener(new MouseClickedAdapter());
+//        this.addMouseListener(new MouseClickedAdapter());
         configureScrollPane();
 
 //        configureSetLocations();
@@ -91,19 +63,9 @@ public class BoardTable extends JTable {
         public void mouseClicked(final MouseEvent e) {
             int row = getSelectedRow();
             int column = getSelectedColumn();
-
-            System.out.println("Row: " + row + " Column: " + column);
-
             for (int i = 0; i < locationSelectionSet.getSize(); i++) {
                 locationSelectionSet.getElementAt(i).setNewlySelected(false);
             }
-
-//                    myTableModel.fireTableDataChanged();
-//                    myTableModel.fireTableCellUpdated(row, column);
-//                    Rectangle rectangle = new Rectangle(new Point(row, column));
-//                    repaint(rectangle);
-            repaint();
-
         }
     }
 
@@ -153,4 +115,33 @@ public class BoardTable extends JTable {
         String[] corner = {""};
         scroll.setCorner(JScrollPane.UPPER_LEFT_CORNER, new RowHeaderAll(corner, this));
     }
+
+    //    @Override
+//    public boolean isCellSelected(final int row, final int column) {
+////        if (locationSelectionSet.containsOneOrLess()) {
+////            return isCellSelected(row, column);
+////        }
+//
+//        return locationSelectionSet.contains(row, column);
+//    }
+
+//    @Override
+//    public void changeSelection(final int rowIndex, final int columnIndex, final boolean toggle, final boolean extend) {
+//        super.changeSelection(rowIndex, columnIndex, toggle, extend);
+////        if (toggle) {
+////            locationSelectionSet.add(rowIndex, columnIndex);
+////
+////        } else {
+////            if (extend) {
+////                locationSelectionSet.add(rowIndex, columnIndex);
+////
+////            } else {
+////                locationSelectionSet.add(rowIndex, columnIndex);
+////            }
+////        }
+//        if (!toggle && !extend) {
+//            System.out.println("Setando locations");
+//            locationSelectionSet.add(rowIndex, columnIndex);
+//        }
+//    }
 }

@@ -16,15 +16,16 @@ public class DefaultTableModelImpl extends AbstractTableModel {
     protected static final String[] COLUMN_HEADER = {"1", "2", "3", "4", "5", "6", "7", "8", "9", "10"};
     protected static final String[] ROW_HEADER = {"A", "B", "C", "D", "E", "F", "G", "H", "I", "J"};
     private List<Location> listLocation = new ArrayList<Location>();
+    private List<Embarcacao> listEmbarcacao = new ArrayList<Embarcacao>();
 
     public DefaultTableModelImpl() {
-        fillLocations();
+//        fillLocations();
         configureLocations();
     }
 
     private void configureLocations() {
         Embarcacao portaAvioes = new PortaAvioes();
-//        adicionarEmbarcacao(portaAvioes);
+        adicionarEmbarcacao(portaAvioes);
 
     }
 
@@ -48,18 +49,25 @@ public class DefaultTableModelImpl extends AbstractTableModel {
     }
 
     private void adicionarEmbarcacao(final Embarcacao embarcacao) {
-        for (final Location location : embarcacao.getLocations()) {
-            this.listLocation.add(location);
-        }
+        this.listEmbarcacao.add(embarcacao);
     }
 
     public Object getValueAt(int rowIndex, int columnIndex) {
-        for (Location item : listLocation) {
-            if (item.getAxisRow() == rowIndex && item.getAxisColumn() == columnIndex) {
-                return item;
+        for (final Embarcacao embarcacao : listEmbarcacao) {
+            for (final Location location : embarcacao.getLocations()) {
+                if (location.getAxisRow() == rowIndex && location.getAxisColumn() == columnIndex) {
+                    return embarcacao;
+                }
             }
         }
-        return new Location(Icon.WATER);
+
+//        for (Location item : listLocation) {
+//            if (item.getAxisRow() == rowIndex && item.getAxisColumn() == columnIndex) {
+//                return item;
+//            }
+//        }
+
+        return null;
     }
 
     public int getColumnCount() {
@@ -85,7 +93,7 @@ public class DefaultTableModelImpl extends AbstractTableModel {
     /**
      * Seta a localização dos navios
      * Deve instanciar o objeto correspondente ex.: Navio, Porta aviões, etc...
-     * Capturar o seu objeto localização (obtendo as coordenadas) (verificar conflitos entre as posições (chamar método no pai mesmo)
+     * Capturar o seu objeto localização (obtendo as coordenadas) (verificar conflitos entre as posições (chamar método no pai)
      * ele vai identificar a localização e definir os pontos estratégicos para cada localização das embarcações.
      */
     private int[][] setLocation() {

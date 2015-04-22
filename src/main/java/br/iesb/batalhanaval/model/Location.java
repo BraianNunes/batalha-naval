@@ -8,6 +8,7 @@ public class Location {
     private int axisColumn;
     private Icon icon;
     private boolean newlySelected = true;
+    private boolean clicado;
 
     public Location() {
     }
@@ -60,5 +61,13 @@ public class Location {
 
     public void setNewlySelected(boolean newlySelected) {
         this.newlySelected = newlySelected;
+    }
+
+    public boolean isClicado() {
+        return clicado;
+    }
+
+    public void setClicado(final boolean clicado) {
+        this.clicado = clicado;
     }
 }

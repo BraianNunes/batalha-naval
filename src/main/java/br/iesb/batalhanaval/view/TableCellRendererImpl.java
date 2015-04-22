@@ -24,25 +24,21 @@ public class TableCellRendererImpl extends DefaultTableCellRenderer {
         Component renderer = super.getTableCellRendererComponent(table, value, isSelected, hasFocus, row, column);
 //        renderer.setForeground(Color.RED);
 
-//        System.out.println("..........");
+        if (localizacaoExata(table, row, column)) {
+            Location location = locationSelectionSet.getLocationAt(row, column);
+            location.setNewlySelected(false);
 
-        if (locationSelectionSet.contains(row, column) && !locationSelectionSet.getLocationAt(row, column).isNewlySelected()) {
+            System.out.println("Row: " + row + " Column: " + column);
+            System.out.println("Selected row: " + table.getSelectedRow() + " Selected Column: " + table.getSelectedColumn());
 
-            renderer.setBackground(Color.GREEN);
-            System.out.println("contains");
-            Location location = ((Location) table.getValueAt(row, column));
-            if (location.getIcon() == Icon.HIT) {
-                setIcon(configureIcon(location.getIcon(), 60, 60));
-//                setIcon(null);
-//                setBackground(Color.red);
-            } else {
-                setIcon(configureIcon(location.getIcon(), 25, 25));
-                setBackground(Color.decode("#499DF5"));//"#006994"));
-            }
+//            Location location1 = ((Location) table.getValueAt(row, column));
+            setIcon(configureIcon(Icon.HIT, 60, 60));
+//            table.repaint();
 
         } else if (table.isCellSelected(row, column)) {
+//            System.out.println("not contains 1");
             renderer.setBackground(table.getSelectionBackground());
-//            setIcon(configureIcon(location.getIcon()));
+            setIcon(configureIcon(Icon.WATER, 25, 25));
 
         } else {
 //            System.out.println("not contains 2");
@@ -54,6 +50,22 @@ public class TableCellRendererImpl extends DefaultTableCellRenderer {
         return this;
     }
 
+    private boolean localizacaoExata(final JTable table, final int row, final int column) {
+        if (this.locationSelectionSet.contains(row, column)) {
+            return true;
+        }
+
+        if (table.getSelectedRow() == row && table.getSelectedColumn() == column) {
+            Location location = (Location) table.getModel().getValueAt(table.getSelectedRow(), table.getSelectedColumn());
+            if (location != null) {
+                this.locationSelectionSet.add(table.getSelectedRow(), table.getSelectedColumn());
+                return true;
+            }
+        }
+
+        return false;
+    }
+
     private ImageIcon configureIcon(Icon icon, int witdh, int height) {
         ImageIcon imageIcon = new ImageIcon(getClass().getResource("/" + icon.getIcon()));
         Image image = imageIcon.getImage();
@@ -62,20 +74,4 @@ public class TableCellRendererImpl extends DefaultTableCellRenderer {
 
         return imageIcon;
     }
-
-//    @Override
-//    protected void setValue(final Object value) {
-//        if (value == null) {
-//            return;
-//        }
-//
-//        Object result = value;
-//        if (value instanceof Location) {
-//            Location location = (Location) value;
-//            result = location.getIcon().getIcon();
-////            result = configureIcon(Icon.HIT);
-//        }
-//
-//        super.setValue("");
-//    }
 }

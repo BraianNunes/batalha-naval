@@ -16,7 +16,7 @@ public class SeaBattleBoard extends JFrame {
 
     public static void main(String[] args) {
         SeaBattleBoard sb = new SeaBattleBoard();
-
+        System.out.println("Main");
         sb.setTitle("SeaBattleBoard");
         sb.setContentPane(new SeaBattleBoard().jp_Main);
         sb.setLocationRelativeTo(null);
@@ -27,6 +27,7 @@ public class SeaBattleBoard extends JFrame {
     }
 
     private void createUIComponents() {
+        jp_Main = new JPanel();
         tb_Player1 = new BoardTable(new DefaultTableModelImpl());
         this.jsp_Player1 = new JScrollPaneImpl(tb_Player1);
 
