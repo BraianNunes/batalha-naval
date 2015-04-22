@@ -22,12 +22,11 @@ public class TableCellRendererImpl extends DefaultTableCellRenderer {
     @Override
     public Component getTableCellRendererComponent(final JTable table, final Object value, final boolean isSelected, final boolean hasFocus, final int row, final int column) {
         Component renderer = super.getTableCellRendererComponent(table, value, isSelected, hasFocus, row, column);
-//        renderer.setForeground(Color.RED);
 
         if (localizacaoExata(table, row, column)) {
             setIcon(configureIcon(Icon.HIT, 60, 60));
 
-        } else if (table.isCellSelected(row, column)) {
+        } else if (table.getSelectedRow() == row && table.getSelectedColumn() == column) {
             System.out.println("isCellSelected");
             renderer.setBackground(table.getSelectionBackground());
             setIcon(configureIcon(Icon.WATER, 25, 25));
@@ -49,7 +48,6 @@ public class TableCellRendererImpl extends DefaultTableCellRenderer {
         if (table.getSelectedRow() == row && table.getSelectedColumn() == column) {
             Embarcacao embarcacao = (Embarcacao) table.getModel().getValueAt(table.getSelectedRow(), table.getSelectedColumn());
             if (embarcacao != null) {
-//                System.out.println("Embarcacao localizada!");
                 embarcacao.decrementLife();
                 this.locationSelectionSet.add(table.getSelectedRow(), table.getSelectedColumn());
                 return true;
@@ -66,5 +64,10 @@ public class TableCellRendererImpl extends DefaultTableCellRenderer {
         imageIcon = new ImageIcon(newImage);
 
         return imageIcon;
+    }
+
+    @Override
+    protected void setValue(final Object value) {
+        super.setValue("");
     }
 }

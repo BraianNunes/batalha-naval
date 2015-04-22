@@ -41,15 +41,6 @@ public class PortaAvioes implements Embarcacao {
         Location l5 = new Location(2, 1);
         locations.add(l5);
 
-//        if (locations.size() != LIFE) {
-//            throw new IllegalArgumentException("Quantidade de localizações incorretas para o " + this.getName());
-//        }
-
         return locations;
-    }
-
-    @Override
-    public String toString() {
-        return "";
     }
 }

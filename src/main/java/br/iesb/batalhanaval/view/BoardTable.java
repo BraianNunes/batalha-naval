@@ -16,20 +16,13 @@ import java.awt.event.MouseEvent;
 public class BoardTable extends JTable {
     private final LocationSelectionSet locationSelectionSet = new LocationSelectionSet();
     private String headers[] = {"1", "2", "3", "4", "5", "6", "7", "8", "9"};
-
     private JScrollPane scroll = new JScrollPane(this);
-    private DefaultTableModelImpl myTableModel;
-
-    private ImageIcon infoIcon = (ImageIcon) UIManager.getIcon("OptionPane.informationIcon");
-    private ImageIcon errorIcon = (ImageIcon) UIManager.getIcon("OptionPane.errorIcon");
-    private ImageIcon warnIcon = (ImageIcon) UIManager.getIcon("OptionPane.warningIcon");
 
     private boolean pressed;
 
-    public BoardTable(DefaultTableModelImpl defaultTableModel) {
-        super(defaultTableModel);
+    public BoardTable() {
+        super.setModel(new DefaultTableModelImpl());
         this.setDefaultRenderer(Object.class, new TableCellRendererImpl(this.locationSelectionSet));
-        this.myTableModel = defaultTableModel;
         initParameters();
     }
 
@@ -61,8 +54,6 @@ public class BoardTable extends JTable {
     public class MouseClickedAdapter extends MouseAdapter {
         @Override
         public void mouseClicked(final MouseEvent e) {
-            int row = getSelectedRow();
-            int column = getSelectedColumn();
             Embarcacao embarcacao = (Embarcacao) getModel().getValueAt(getSelectedRow(), getSelectedColumn());
             if (embarcacao != null) {
                 if (embarcacao.getLife() <= 0) {
@@ -118,33 +109,4 @@ public class BoardTable extends JTable {
         String[] corner = {""};
         scroll.setCorner(JScrollPane.UPPER_LEFT_CORNER, new RowHeaderAll(corner, this));
     }
-
-    //    @Override
-//    public boolean isCellSelected(final int row, final int column) {
-////        if (locationSelectionSet.containsOneOrLess()) {
-////            return isCellSelected(row, column);
-////        }
-//
-//        return locationSelectionSet.contains(row, column);
-//    }
-
-//    @Override
-//    public void changeSelection(final int rowIndex, final int columnIndex, final boolean toggle, final boolean extend) {
-//        super.changeSelection(rowIndex, columnIndex, toggle, extend);
-////        if (toggle) {
-////            locationSelectionSet.add(rowIndex, columnIndex);
-////
-////        } else {
-////            if (extend) {
-////                locationSelectionSet.add(rowIndex, columnIndex);
-////
-////            } else {
-////                locationSelectionSet.add(rowIndex, columnIndex);
-////            }
-////        }
-//        if (!toggle && !extend) {
-//            System.out.println("Setando locations");
-//            locationSelectionSet.add(rowIndex, columnIndex);
-//        }
-//    }
 }

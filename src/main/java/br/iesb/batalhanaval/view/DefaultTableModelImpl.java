@@ -61,12 +61,6 @@ public class DefaultTableModelImpl extends AbstractTableModel {
             }
         }
 
-//        for (Location item : listLocation) {
-//            if (item.getAxisRow() == rowIndex && item.getAxisColumn() == columnIndex) {
-//                return item;
-//            }
-//        }
-
         return null;
     }
 

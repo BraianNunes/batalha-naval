@@ -27,7 +27,7 @@ public class SeaBattleBoard extends JFrame {
 
     private void createUIComponents() {
         jp_Main = new JPanel();
-        tb_Player1 = new BoardTable(new DefaultTableModelImpl());
+        tb_Player1 = new BoardTable();
         this.jsp_Player1 = new JScrollPaneImpl(tb_Player1);
 
 //        TableCellRenderer renderer = new TableCellRendererImpl();
