@@ -90,6 +90,10 @@ public class DefaultTableModelImpl extends AbstractTableModel {
         super.setValueAt(aValue, rowIndex, columnIndex);
     }
 
+    public List<Embarcacao> getListEmbarcacao() {
+        return listEmbarcacao;
+    }
+
     // FIXME Implementar método!
 
     /**

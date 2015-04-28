@@ -50,7 +50,23 @@ public class BoardTable extends JTable {
                 if (embarcacao.getLife() <= 0) {
                     JOptionPane.showMessageDialog(null, "A embarcacao \"" + embarcacao.getName() + "\" foi destruida!");
                 }
+
+                isEndGame();
             }
+        }
+
+        private void isEndGame() {
+            DefaultTableModelImpl model = ((DefaultTableModelImpl) getModel());
+            for (Embarcacao item : model.getListEmbarcacao()) {
+                if (item.getLife() <= 0) {
+                    continue;
+                }
+
+                return;
+            }
+
+            JOptionPane.showMessageDialog(null, "Fim do jogo! Voce venceu!");
+            System.exit(0);
         }
     }
 
